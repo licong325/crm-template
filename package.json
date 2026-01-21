@@ -1,0 +1,28 @@
+{
+  "name": "crm-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vue 3 CRM 项目模板 - 支持 PC 端和移动端",
+  "scripts": {
+    "dev:pc": "pnpm --filter @crm/pc dev",
+    "dev:h5": "pnpm --filter @crm/h5 dev",
+    "build:pc": "pnpm --filter @crm/pc build",
+    "build:h5": "pnpm --filter @crm/h5 build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write \"packages/**/*.{js,ts,vue,json,css,scss}\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "~5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "msw": {
+    "workerDirectory": [
+      "packages\\pc\\public",
+      "packages\\h5\\public"
+    ]
+  }
+}

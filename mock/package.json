@@ -1,0 +1,10 @@
+{
+  "name": "@crm/mock",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./browser.ts",
+  "dependencies": {
+    "msw": "^2.6.8"
+  }
+}

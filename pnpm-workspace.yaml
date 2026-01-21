@@ -1,0 +1,4 @@
+packages:
+  - packages/*
+  - mock
+approvedBuilds: '@parcel/watcher,esbuild,msw,vue-demi'
